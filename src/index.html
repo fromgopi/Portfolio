@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"/>
+<!--    <link rel="stylesheet" href="./assets/css/main.css">-->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+            <a
+                    id="logo-container"
+                    aria-label="Navigate to the beginning of the page"
+                    href="#intro"
+                    class="brand-logo teal-text"
+            >
+                <h1>
+                    Gopi Krishna M<span class="brown-text light"
+                >Full Stack Developer</span
+                >
+                </h1></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the About section"
+                    href="#about"
+                    class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Experience section"
+                    href="#experience"
+                    class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Projects section"
+                    href="#projects"
+                    class="waves-effect waves-dark indigo-text"
+            ><i class="mdi-av-web small"></i><span>Projects</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Skills section"
+                    href="#skills"
+                    class="waves-effect waves-dark purple-text"
+            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Awards section"
+                    href="#awards"
+                    class="waves-effect waves-dark red-text"
+            ><i class="mdi-action-grade small"></i><span>Awards</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Education section"
+                    href="#education"
+                    class="waves-effect waves-dark orange-text"
+            ><i class="mdi-social-school small"></i><span>Education</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Contact section"
+                    href="#contact"
+                    class="waves-effect waves-dark brown-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Blog section"
+                    href="#blog"
+                    class="waves-effect waves-dark yellow-text text-darken-2"
+            ><i class="mdi-content-create small"></i><span>Blog</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Open Andrew's resume in a new tab"
+                    href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+                    target="_blank"
+                    class="waves-effect waves-dark grey-text text-darken-3"
+            ><i class="mdi-action-description small"></i><span>Resume</span></a
+            >
+        </li>
+    </ul>
+</nav>
+<nav class="hide-on-large only trigger z-depth-1">
+    <a
+            aria-label="Toggle visibility of the mobile navbar"
+            href="#"
+            data-activates="slide-out"
+            class="button-collapse"
+    ><i class="mdi-navigation-menu"></i
+    ></a>
+    <div class="name-title">
+        <a
+                id="name"
+                aria-label="Navigate to the beginning of the page"
+                href="#main"
+                class="teal-text"
+        >Andrew Borstein</a
+        ><span class="brown-text light">Full Stack Developer</span>
+    </div>
+</nav>
+<nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the About section"
+                    href="#about"
+                    class="waves-effect waves-dark teal-text"
+            ><i class="mdi-social-person small"></i><span>About</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Experience section"
+                    href="#experience"
+                    class="waves-effect waves-dark cyan-text"
+            ><i class="mdi-action-trending-up small"></i
+            ><span>Experience</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Projects section"
+                    href="#projects"
+                    class="waves-effect waves-dark indigo-text"
+            ><i class="mdi-av-web small"></i><span>Projects</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Skills section"
+                    href="#skills"
+                    class="waves-effect waves-dark purple-text"
+            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Awards section"
+                    href="#awards"
+                    class="waves-effect waves-dark red-text"
+            ><i class="mdi-action-grade small"></i><span>Awards</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Education section"
+                    href="#education"
+                    class="waves-effect waves-dark orange-text"
+            ><i class="mdi-social-school small"></i><span>Education</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Contact section"
+                    href="#contact"
+                    class="waves-effect waves-dark brown-text"
+            ><i class="mdi-content-mail small"></i><span>Contact</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Navigate to the Contact section"
+                    href="#blog"
+                    class="waves-effect waves-dark yellow-text text-dark-3"
+            ><i class="mdi-content-mail small"></i><span>Blog</span></a
+            >
+        </li>
+        <li class="bold">
+            <a
+                    aria-label="Open Andrew's Resume in a new tab"
+                    href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+                    target="_blank"
+                    class="waves-effect waves-dark grey-text text-darken-3"
+            ><i class="mdi-action-description small"></i><span>Resume</span></a
+            >
+        </li>
+    </ul>
+</nav>
+<main>
+    <section class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>
+                I want to <span class="teal">make things</span>
+            </h2>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+<script src="./assets/js/index.js"></script>
+</html>
