@@ -1,216 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"/>
-<!--    <link rel="stylesheet" href="./assets/css/main.css">-->
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portfolio</title>
+    <meta name="description" content="An awesome site that showcases my work!">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/main.css">
+    
 </head>
 <body>
-<nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-        <li class="logo">
-            <a
-                    id="logo-container"
-                    aria-label="Navigate to the beginning of the page"
-                    href="#intro"
-                    class="brand-logo teal-text"
-            >
-                <h1>
-                    Gopi Krishna M<span class="brown-text light"
-                >Full Stack Developer</span
-                >
-                </h1></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the About section"
-                    href="#about"
-                    class="waves-effect waves-dark teal-text"
-            ><i class="mdi-social-person small"></i><span>About</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Experience section"
-                    href="#experience"
-                    class="waves-effect waves-dark cyan-text"
-            ><i class="mdi-action-trending-up small"></i
-            ><span>Experience</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Projects section"
-                    href="#projects"
-                    class="waves-effect waves-dark indigo-text"
-            ><i class="mdi-av-web small"></i><span>Projects</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Skills section"
-                    href="#skills"
-                    class="waves-effect waves-dark purple-text"
-            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Awards section"
-                    href="#awards"
-                    class="waves-effect waves-dark red-text"
-            ><i class="mdi-action-grade small"></i><span>Awards</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Education section"
-                    href="#education"
-                    class="waves-effect waves-dark orange-text"
-            ><i class="mdi-social-school small"></i><span>Education</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Contact section"
-                    href="#contact"
-                    class="waves-effect waves-dark brown-text"
-            ><i class="mdi-content-mail small"></i><span>Contact</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Blog section"
-                    href="#blog"
-                    class="waves-effect waves-dark yellow-text text-darken-2"
-            ><i class="mdi-content-create small"></i><span>Blog</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Open Andrew's resume in a new tab"
-                    href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
-                    target="_blank"
-                    class="waves-effect waves-dark grey-text text-darken-3"
-            ><i class="mdi-action-description small"></i><span>Resume</span></a
-            >
-        </li>
-    </ul>
-</nav>
-<nav class="hide-on-large only trigger z-depth-1">
-    <a
-            aria-label="Toggle visibility of the mobile navbar"
-            href="#"
-            data-activates="slide-out"
-            class="button-collapse"
-    ><i class="mdi-navigation-menu"></i
-    ></a>
-    <div class="name-title">
-        <a
-                id="name"
-                aria-label="Navigate to the beginning of the page"
-                href="#main"
-                class="teal-text"
-        >Andrew Borstein</a
-        ><span class="brown-text light">Full Stack Developer</span>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-</nav>
-<nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the About section"
-                    href="#about"
-                    class="waves-effect waves-dark teal-text"
-            ><i class="mdi-social-person small"></i><span>About</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Experience section"
-                    href="#experience"
-                    class="waves-effect waves-dark cyan-text"
-            ><i class="mdi-action-trending-up small"></i
-            ><span>Experience</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Projects section"
-                    href="#projects"
-                    class="waves-effect waves-dark indigo-text"
-            ><i class="mdi-av-web small"></i><span>Projects</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Skills section"
-                    href="#skills"
-                    class="waves-effect waves-dark purple-text"
-            ><i class="mdi-av-equalizer small"></i><span>Skills</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Awards section"
-                    href="#awards"
-                    class="waves-effect waves-dark red-text"
-            ><i class="mdi-action-grade small"></i><span>Awards</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Education section"
-                    href="#education"
-                    class="waves-effect waves-dark orange-text"
-            ><i class="mdi-social-school small"></i><span>Education</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Contact section"
-                    href="#contact"
-                    class="waves-effect waves-dark brown-text"
-            ><i class="mdi-content-mail small"></i><span>Contact</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Navigate to the Contact section"
-                    href="#blog"
-                    class="waves-effect waves-dark yellow-text text-dark-3"
-            ><i class="mdi-content-mail small"></i><span>Blog</span></a
-            >
-        </li>
-        <li class="bold">
-            <a
-                    aria-label="Open Andrew's Resume in a new tab"
-                    href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
-                    target="_blank"
-                    class="waves-effect waves-dark grey-text text-darken-3"
-            ><i class="mdi-action-description small"></i><span>Resume</span></a
-            >
-        </li>
-    </ul>
-</nav>
-<main>
-    <section class="section scrollspy full-height">
-        <div class="overlay"></div>
-        <div class="container">
-            <h2>
-                I want to <span class="teal">make things</span>
-            </h2>
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-    </section>
-</main>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Gopi Krishna M.</h1>
+            <h2>Software Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <p>
+                            Hi I'm Gopi a self taught, design thinking full-stack developer with a passion for machine learning. 
+                            I'm currently living in Chennai, India, but originally from Hyderabad. 
+                            I'm an absolute geek and love geeking out on all things Linux and Python.
+                        </p>
+                        <br>
+                        <p>
+                            First fell in love with web design when I made my first personal website. 
+                            Since then I have been hooked. Although my focus for now is heavily in both frontend and backend web development. 
+                            My favorite development stack at the moment is React, Python, Django, MongoDB, Redis.
+                        </p>
+                        <hr>
+                        <p>
+                            Values I hold high are loyalty, reliability, authenticity and helping others. 
+                            Which is why I see projects through to the end and why I believe in not only creating beautiful software but also 
+                            reliable and reflect the client's brand and that is easy to use so that it does not distract the a user experience
+                            Whether it’s creating servers in Python Django, connecting to MongoDB databases or designing unique user interfaces per device 
+                            whilst still maintaining a consistent brand experience I will bring your ideas to life. 
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of About. -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+
+            <div data-date="September 2015 – September 2016">
+                <h3>Employer Name</h3>
+                <h4>Job Title</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 Gopi Krishna M.
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-<script src="./assets/js/index.js"></script>
+<script src="../src/assets/js/jquery.min.js"></script>
+<script src="../dist/js/index.min.js"></script>
 </html>
