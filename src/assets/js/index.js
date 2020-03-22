@@ -75,4 +75,25 @@
             $('#more-projects').fadeIn(300);
         });
     });
+
+    // Redirection from formspree.io back to the main page.
+    $('#contact-form-submit').on("click", function () {
+        message = $("#contact-form-message").val();
+        reply_to = $("#contact-form-replyto").val();
+        subject = "Contact request from personal website";
+        json_data = {'message': message, '_subject': subject, '_replyto': reply_to};
+        $.ajax({
+            url: 'https://formspree.io/xjvopyez',
+            method: 'POST',
+            data: json_data,
+            dataType: 'json',
+            success: function (data) {
+                if(data.ok === true) {
+                    $("#contact").load(" #contact");
+                }
+            }
+        });
+        return false;
+    });
+
 })(jQuery);
