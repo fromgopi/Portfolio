@@ -5,6 +5,18 @@ const sass = require('gulp-sass');
 const wait = require('gulp-wait');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
+const ghPages = require('gulp-gh-pages');
+
+const options = {
+    'remoteUrl': 'https://github.com/fromgopi/Portfolio.git',
+    'branch': 'master'
+}
+
+// Task to build and deploy code to github pages.
+gulp.task('deploy', function(){
+    return gulp.src('dist/**/*.*')
+     .pipe(ghPages());
+});
 
 gulp.task('scripts', function () {
     return gulp.src('src/assets/js/index.js')
