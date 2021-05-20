@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js"
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fromgopi/Portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "oscarmild",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fromgopi/Portfolio/issues"

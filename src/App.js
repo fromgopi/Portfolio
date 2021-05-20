@@ -4,7 +4,7 @@ import './app.styles.scss';
 export default class App extends Component {
     render() {
         return (
-            <div>
+            <div className="maindiv">
                 Welcome to the world of Oscarmild
             </div>
         )
