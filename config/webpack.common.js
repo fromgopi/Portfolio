@@ -38,7 +38,7 @@ module.exports = {
         // Generates an HTML file from a template
         new HtmlWebpackPlugin({
             title: "Oscarmild",
-            favicon: paths.src + "/assets/icons/favicon.png",
+            favicon: paths.src + "/assets/icons/elephant.png",
             template: paths.public + "/index.html", // template file
             filename: "index.html", // output file
         }),

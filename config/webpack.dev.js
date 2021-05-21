@@ -6,6 +6,8 @@ const common = require("./webpack.common.js");
 module.exports = merge(common, {
     // Set the mode to development or production
     mode: "development",
+    // Enabling watch mode in dev server.
+    watch: true,
 
     // Control how source maps are generated
     devtool: "inline-source-map",
