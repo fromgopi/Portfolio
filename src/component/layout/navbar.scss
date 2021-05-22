@@ -1,0 +1,25 @@
+.navbar-ul-top {
+    display: flex;
+    -moz-box-align: center;
+    transition: all 0.2s ease 0s;
+    align-items: center;
+    list-style: outside none none;
+    margin: 22px;
+}
+
+.navbar-ul-top ul {
+    list-style: outside none none;
+    line-height: 150%;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.navbar-ul-li {
+    margin-left: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-ul-li a{
+    color: rgb(109, 131, 242);
+}
