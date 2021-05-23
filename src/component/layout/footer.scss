@@ -1,0 +1,22 @@
+.footer-main {
+    width: 100vw;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0) linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%) repeat scroll 0% 0%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-main .main {
+    margin: auto;
+    width: 80%;
+}
+
+.footer-main .floating-p {
+    float: right;
+}
+
+.footer-main img {
+    flex-basis: 100px;
+    max-width: 35px;
+    display: inline-block;
+}
