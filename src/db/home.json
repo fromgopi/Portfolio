@@ -1,0 +1,18 @@
+{
+    "about": "I am Software Engineer, Day Trader and enthusiast working on multiple areas like Agri Tech and much more. It all started back in 2010 at high school. I was fascinated with computer and programming and I really wanted to know how do they work.  I am curious by nature and always wonder how something work and that probably drew my into IT fields. In 2012 I went to university to study Information Technology and start a career as a Software developer. As a child I always used have interest in growing and knowing about  plants and gardens. I was also a active stock market enthusiast. Since then I kinda switched fields and started working more as a software developer, day trader and agriculturist. I mainly write about software, stock market and Agriculture and related topics on my blog. If you are interested in working with me, feel free to send me email at muktevigk@oscarmild.me or use the contact page.",
+    
+    "skills" : {
+        "1" : {
+            "name" : "Python",
+            "percentage" : "90%",
+            "color" : "#ec5453",
+            "icon" : "fa-brands fa-python"
+        } ,
+        "2": {
+            "name" : "Java",
+            "percentage" : "80%",
+            "color" : "#ec5453",
+            "icon" : "fa-brands fa-java"
+        }
+    }
+}

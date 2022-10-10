@@ -1,6 +1,8 @@
-from pprint import pp
+import json
 from flask import Flask, request, render_template
 from flask_cors import CORS
+
+import constants
 
 app = Flask(__name__)
 cors = CORS(app=app)
@@ -9,7 +11,9 @@ cors = CORS(app=app)
 @app.route('/home')
 def home():
     if request.method == 'GET':
-        return render_template('home.html')
+        with open(constants.HOME_PATH) as f:
+            home_data = json.load(f)
+        return render_template('home.html', context = home_data)
     
     
 if __name__ == '__main__':

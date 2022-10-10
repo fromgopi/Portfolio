@@ -16,7 +16,7 @@
     --p-color: rgba(0, 0, 0, 0.5);
     --box-shadow: rgba(0, 0, 0, 0.2);
     --black-075: rgba(0, 0, 0, 0.75);
-    --green-075: rgba(155, 217, 163, 0.75);
+    --green-075:rgb(65, 179, 178);
 }
 
 body {
