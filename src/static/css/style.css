@@ -13,10 +13,11 @@
     --purple-color: #a84cb8;
     --border-color: rgba(0, 0, 0, 0.1);
     --black-color: rgba(0,0,0);
-    --p-color: rgba(0, 0, 0, 0.5);
+    --p-color: rgba(0,0,0,0.5);
     --box-shadow: rgba(0, 0, 0, 0.2);
     --black-075: rgba(0, 0, 0, 0.75);
-    --green-075:rgb(65, 179, 178);
+    /* --green-075:rgb(65, 179, 178); */
+    --green-075:rgb(5, 56, 107);
 }
 
 body {
@@ -35,7 +36,7 @@ p {
 a,
 a:hover,
 a:focus {
-    color: inherit;
+    color: var(--main-color);
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -225,7 +226,7 @@ ul.social-sidebar li {
 
 .heading {
     font-size: 18px;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -420,6 +421,7 @@ ul.social-sidebar li {
     position: relative;
     width: 75%;
     float: left;
+    margin-left: -0.5em;
 }
 
 /* ABOUT PAGE -> Testimonials */
