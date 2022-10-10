@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 :root {
     --main-color: rgb(242, 243, 247);
@@ -15,6 +16,7 @@
     --p-color: rgba(0, 0, 0, 0.5);
     --box-shadow: rgba(0, 0, 0, 0.2);
     --black-075: rgba(0, 0, 0, 0.75);
+    --green-075: rgba(155, 217, 163, 0.75);
 }
 
 body {
@@ -74,10 +76,10 @@ a:focus {
 #sidebar {
     min-width: 275px;
     max-width: 275px;
-    background: #7386D5;
+    /* background: var(--green-075); */
     color: var(--black-color);
     transition: all 0.75s;
-    background-color: var(--main-color);
+    background-color: var(--green-075);
     margin-left: -275px;
 }
 
@@ -86,8 +88,8 @@ a:focus {
 }
 
 .sidebar-header {
-    padding: 30px 50px 0px 50px;
-    background-color: var(--main-color);
+    padding: 30px 56px 0px 50px;
+    /* background-color: var(--green-075); */
     text-align: center;
 }
 

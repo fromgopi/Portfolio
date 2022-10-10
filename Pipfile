@@ -18,6 +18,7 @@ sqlparse = "*"
 tzdata = "*"
 charset-normalizer = "*"
 certifi = "*"
+flask-cors = "*"
 
 [dev-packages]
 
