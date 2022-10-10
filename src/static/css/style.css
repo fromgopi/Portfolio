@@ -17,7 +17,8 @@
     --box-shadow: rgba(0, 0, 0, 0.2);
     --black-075: rgba(0, 0, 0, 0.75);
     /* --green-075:rgb(65, 179, 178); */
-    --green-075:rgb(5, 56, 107);
+    /* --green-075:rgb(5, 56, 107); */
+    --green-075:rgb(52, 91, 99);
 }
 
 body {
@@ -170,7 +171,7 @@ ul.social-sidebar li {
 #sidebarCollapse{
     min-width: 40px;
     height: 40px;
-    background-color: var(--main-color);
+    background-color: var(--green-075);
     position: relative;
     transform: rotate(-45deg);
     margin-left: -20px;
@@ -556,6 +557,10 @@ ul.social-sidebar li {
     position: relative;
     transition-property: width;
     transition-duration: 3s;
+}
+
+.progress-percentage {
+    
 }
 
 .progress-active::before{
