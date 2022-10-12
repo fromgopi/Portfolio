@@ -19,6 +19,7 @@ tzdata = "*"
 charset-normalizer = "*"
 certifi = "*"
 flask-cors = "*"
+gunicorn = "*"
 
 [dev-packages]
 
